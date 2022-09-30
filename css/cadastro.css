@@ -1,0 +1,369 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&display=swap');
+
+*{
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+
+}
+
+header{
+    width: 100%;
+    height: 8vh;
+    background-color: rgb(29, 28, 28);
+}
+
+nav{
+    display: flex;
+    width: 85%;
+    height: 100%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav span{
+    color: #f7a900;
+}
+
+nav h1{
+    font-size: 30px;
+    color: #DEDEDE;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #DEDEDE;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+nav ul li a:hover{
+    color: #f7a900;
+}
+
+.btn1{
+    margin-right: 50px;
+}
+
+.container-cadastro{
+    background-color: rgb(49, 48, 48);
+    width: 100vw;
+    height: 88vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.esquerda{
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    height: 88vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.direita{
+    display: flex;
+    width: 50vw;
+    height: 88vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.esquerda h1{
+    font-size: 2vw;
+    color: #f7a900;
+    text-align: center;
+    text-shadow: 0px 1px 3px #DEDEDE;
+}
+
+.box-cadastro{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background-color: rgb(32, 32, 32);
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px -26px #c58805;
+}
+
+.box-cadastro h1{
+    color: #f7a900;
+    font-weight: 800;
+    margin: 0;
+}
+
+.cadastro-interno{
+    height: 100%;
+    width: 100%;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.cadastro-interno input{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: rgb(73, 69, 69);
+    color: #DEDEDE;
+    font-size: 18px ;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.cadastro-interno input::placeholder{
+    color: #DEDEDE;
+    font-size: 16px;
+}
+
+.cadastro-interno label{
+    color: #DEDEDE;
+    margin-bottom: 10px;
+}
+
+.btn-cadastro{
+    width: 100%;
+    font-size: 18px;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #0e0c07;
+    cursor: pointer;
+    background-color: #f7a900;
+    box-shadow: 0px 10px 40px -12px #6b4a04;
+}
+
+.btn-cadastro:hover{
+    box-shadow: 3px 3px 30px #f7a900;
+}
+
+.cadastro-img{
+    width: 28vw;
+}
+
+.p-cadastre{
+    color: #DEDEDE;
+}
+
+.p-cadastre a{
+    text-decoration: none;
+    color: #f7a900
+}
+.icons{
+    padding: 10px 0px 20px 0px;
+}
+
+.icons a{
+    padding: 0px 15px;
+}
+
+footer{
+    display: flex;
+    height: 4vh;
+    background-color: rgb(29, 28, 28);
+    align-items: center;
+    justify-content: center;
+    color: #DEDEDE;
+}
+
+footer span{
+    color: #f7a900;
+}
+
+@media only screen and (max-width:950px){
+    .box-cadastro{
+        width: 85%;
+    }
+
+    .esquerda{
+        width: 40%;
+    }
+
+    .esquerda h1{
+        font-size: 3vw;
+    }
+
+    .esquerda img{
+        width: 40vw;
+    }
+}
+
+@media only screen and (max-width:660px){
+    nav h1{
+        font-size: 20px;
+    }
+
+    nav ul li a{
+        font-size: 16px;
+    }
+
+    .btn1{
+        margin-right: 20px;
+    }
+
+    .box-cadastro h1{
+        font-size: 16px;
+    }
+
+    .cadastro-interno input::placeholder{
+        font-size: 14px;
+    }
+
+    .cadastro-interno input{
+        padding: 8px;
+    }
+
+    .cadastro-interno label{
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width:656px){
+
+    .container-cadastro{
+        flex-direction: column;
+    }
+
+    .esquerda h1{
+        display: none;
+    }
+
+    .esquerda img{
+        display: none;
+    }
+
+    .esquerda{
+        width: 100%;
+        height: auto;
+    }
+
+    .direita{
+        width: 100%;
+        height: auto;
+    }
+
+
+    .box-cadastro{
+        height: auto;
+        width: 100vw;
+        box-shadow: none;
+        border-radius: 0px;
+    }
+}
+
+@media only screen and (max-width:498px){
+    nav h1{
+        font-size: 15px;
+    }
+
+    nav ul li a{
+        font-size: 10px;
+    }
+
+    .btn1{
+        margin-right: 10px;
+    }
+
+    .esquerda img{
+        width: 20%;
+    }
+
+    .icons img{
+        width: 30px;
+    }
+
+    .icons{
+        padding: 2px;
+    }
+
+}
+
+@media only screen and (max-width:378px){
+    nav h1{
+        display: none;
+    }
+
+    nav ul li a{
+        font-size: 15px;
+    }
+}
+
+
+@media only screen and (max-width:328px){
+    
+    nav h1{
+        font-size: 1000px;
+    }
+    
+    .direita p{
+        font-size: 10px;
+    }
+
+    .direita img{
+        width: 25px;
+    }
+
+    .icons{
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-height:843px){
+    .box-cadastro h1{
+        font-size: 16px;
+    }
+
+    .cadastro-interno input::placeholder{
+        font-size: 14px;
+    }
+
+    .cadastro-interno input{
+        padding: 8px;
+    }
+
+    .cadastro-interno label{
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-height:716px){
+    
+    .direita h1{
+        margin: 0;
+    }
+
+    .icons img{
+        width: 20px;
+    }
+
+    .btn-cadastro{
+        font-size: 15px;
+        margin: 6px;
+    }
+
+    .direita label{
+        margin: 0;
+    }
+
+    .box-cadastro{
+        padding: 10px 30px;
+    }
+}
